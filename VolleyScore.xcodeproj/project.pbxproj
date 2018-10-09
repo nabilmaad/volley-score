@@ -16,10 +16,11 @@
 		BD3A76CC216C0CA800733371 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76CA216C0CA800733371 /* Interface.storyboard */; };
 		BD3A76CE216C0CA900733371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76CD216C0CA900733371 /* Assets.xcassets */; };
 		BD3A76D5216C0CA900733371 /* VolleyScore WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BD3A76DA216C0CA900733371 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76D9216C0CA900733371 /* InterfaceController.swift */; };
+		BD3A76DA216C0CA900733371 /* VolleySetListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */; };
 		BD3A76DC216C0CA900733371 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76DB216C0CA900733371 /* ExtensionDelegate.swift */; };
 		BD3A76DE216C0CA900733371 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76DD216C0CA900733371 /* NotificationController.swift */; };
 		BD3A76E0216C0CA900733371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76DF216C0CA900733371 /* Assets.xcassets */; };
+		BD3A76F1216C6A7100733371 /* SetRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76F0216C6A7100733371 /* SetRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +78,13 @@
 		BD3A76CD216C0CA900733371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3A76CF216C0CA900733371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VolleyScore WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD3A76D9216C0CA900733371 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolleySetListInterfaceController.swift; sourceTree = "<group>"; };
 		BD3A76DB216C0CA900733371 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		BD3A76DD216C0CA900733371 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BD3A76DF216C0CA900733371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3A76E1216C0CA900733371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3A76E2216C0CA900733371 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BD3A76F0216C6A7100733371 /* SetRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +151,8 @@
 		BD3A76D8216C0CA900733371 /* VolleyScore WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BD3A76D9216C0CA900733371 /* InterfaceController.swift */,
+				BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */,
+				BD3A76F0216C6A7100733371 /* SetRowController.swift */,
 				BD3A76DB216C0CA900733371 /* ExtensionDelegate.swift */,
 				BD3A76DD216C0CA900733371 /* NotificationController.swift */,
 				BD3A76DF216C0CA900733371 /* Assets.xcassets */,
@@ -301,8 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3A76DE216C0CA900733371 /* NotificationController.swift in Sources */,
+				BD3A76F1216C6A7100733371 /* SetRowController.swift in Sources */,
 				BD3A76DC216C0CA900733371 /* ExtensionDelegate.swift in Sources */,
-				BD3A76DA216C0CA900733371 /* InterfaceController.swift in Sources */,
+				BD3A76DA216C0CA900733371 /* VolleySetListInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
