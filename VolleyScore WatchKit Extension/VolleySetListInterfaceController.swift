@@ -16,14 +16,18 @@ struct VolleySet {
     let theirScore: Int
 }
 
+enum Team: String {
+    
+    case us, them
+}
+
 class VolleySetListInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var setsTable: WKInterfaceTable!
     
     static let numberOfSets = 3
-    static let scoreKeys = ["set1.our.score", "set1.their.score",
-                            "set2.our.score", "set2.their.score",
-                            "set3.our.score", "set3.their.score"]
+    
+    var volleySets: [VolleySet] = []
     
     // MARK: Lifecycle
     
@@ -35,34 +39,44 @@ class VolleySetListInterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
         updateRows()
     }
     
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    // MARK: Row selection
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let volleySet = volleySets[rowIndex]
+        pushController(withName: "VolleyScoreInterfaceController", context: volleySet)
     }
     
     // MARK: Private
     
     private func updateRows() {
+        volleySets.removeAll()
         for index in 0..<setsTable.numberOfRows {
             guard let setRowController = setsTable.rowController(at: index) as? SetRowController else { continue }
             
-            setRowController.set = VolleySet(
-                setName: "Set \(index + 1)",
-                ourScore: UserDefaults.standard.integer(forKey: VolleySetListInterfaceController.scoreKeys[index * 2]),
-                theirScore: UserDefaults.standard.integer(forKey: VolleySetListInterfaceController.scoreKeys[index * 2 + 1])
+            let setNumber = index + 1
+            let volleySet = VolleySet(
+                setName: "Set \(setNumber)",
+                ourScore: UserDefaults.standard.integer(forKey: key(setNumber: setNumber, team: .us)),
+                theirScore: UserDefaults.standard.integer(forKey: key(setNumber: setNumber, team: .them))
             )
+            setRowController.set = volleySet
+            volleySets.append(volleySet)
         }
     }
     
+    private func key(setNumber: Int, team: Team) -> String {
+        return "set\(setNumber).\(team.rawValue).score"
+    }
+    
     @IBAction func clearScores() {
-        for key in VolleySetListInterfaceController.scoreKeys {
-            UserDefaults.standard.set(0, forKey: key)
+        for index in 0..<setsTable.numberOfRows {
+            UserDefaults.standard.set(0, forKey: key(setNumber: index + 1, team: .us))
+            UserDefaults.standard.set(0, forKey: key(setNumber: index + 1, team: .them))
         }
         
         updateRows()
@@ -71,13 +85,13 @@ class VolleySetListInterfaceController: WKInterfaceController {
     // MARK: Test
     
     private func persistRandomScore() {
-        UserDefaults.standard.set(25, forKey: VolleySetListInterfaceController.scoreKeys[0])
-        UserDefaults.standard.set(21, forKey: VolleySetListInterfaceController.scoreKeys[1])
+        UserDefaults.standard.set(25, forKey: key(setNumber: 1, team: .us))
+        UserDefaults.standard.set(21, forKey: key(setNumber: 1, team: .them))
         
-        UserDefaults.standard.set(25, forKey: VolleySetListInterfaceController.scoreKeys[2])
-        UserDefaults.standard.set(22, forKey: VolleySetListInterfaceController.scoreKeys[3])
+        UserDefaults.standard.set(25, forKey: key(setNumber: 2, team: .us))
+        UserDefaults.standard.set(22, forKey: key(setNumber: 2, team: .them))
         
-        UserDefaults.standard.set(25, forKey: VolleySetListInterfaceController.scoreKeys[4])
-        UserDefaults.standard.set(23, forKey: VolleySetListInterfaceController.scoreKeys[5])
+        UserDefaults.standard.set(25, forKey: key(setNumber: 3, team: .us))
+        UserDefaults.standard.set(23, forKey: key(setNumber: 3, team: .them))
     }
 }
