@@ -22,6 +22,7 @@
 		BD3A76E0216C0CA900733371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76DF216C0CA900733371 /* Assets.xcassets */; };
 		BD3A76F1216C6A7100733371 /* SetRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76F0216C6A7100733371 /* SetRowController.swift */; };
 		BD3A76F6216F031300733371 /* VolleyScoreInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76F5216F031300733371 /* VolleyScoreInterfaceController.swift */; };
+		BD7A2717216F237D001A0A21 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A2716216F237D001A0A21 /* ComplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		BD3A76E2216C0CA900733371 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BD3A76F0216C6A7100733371 /* SetRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRowController.swift; sourceTree = "<group>"; };
 		BD3A76F5216F031300733371 /* VolleyScoreInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolleyScoreInterfaceController.swift; sourceTree = "<group>"; };
+		BD7A2716216F237D001A0A21 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		BD3A76D8216C0CA900733371 /* VolleyScore WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BD7A2716216F237D001A0A21 /* ComplicationController.swift */,
 				BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */,
 				BD3A76F0216C6A7100733371 /* SetRowController.swift */,
 				BD3A76F5216F031300733371 /* VolleyScoreInterfaceController.swift */,
@@ -310,6 +313,7 @@
 				BD3A76F1216C6A7100733371 /* SetRowController.swift in Sources */,
 				BD3A76F6216F031300733371 /* VolleyScoreInterfaceController.swift in Sources */,
 				BD3A76DC216C0CA900733371 /* ExtensionDelegate.swift in Sources */,
+				BD7A2717216F237D001A0A21 /* ComplicationController.swift in Sources */,
 				BD3A76DA216C0CA900733371 /* VolleySetListInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

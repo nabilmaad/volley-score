@@ -9,16 +9,24 @@
 import WatchKit
 import Foundation
 
-struct VolleySet {
-    
-    let setName: String
-    let ourScore: Int
-    let theirScore: Int
-}
-
 enum Team: String {
     
     case us, them
+}
+
+struct VolleySet {
+    
+    let number: Int
+    let ourScore: Int
+    let theirScore: Int
+    
+    var name: String {
+        return "Set \(self.number)"
+    }
+    
+    static func key(setNumber: Int, team: Team) -> String {
+        return "set\(setNumber).\(team.rawValue).score"
+    }
 }
 
 class VolleySetListInterfaceController: WKInterfaceController {
@@ -35,7 +43,6 @@ class VolleySetListInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         setsTable.setNumberOfRows(VolleySetListInterfaceController.numberOfSets, withRowType: "SetRow")
-//        persistRandomScore()
     }
     
     override func willActivate() {
@@ -60,23 +67,19 @@ class VolleySetListInterfaceController: WKInterfaceController {
             
             let setNumber = index + 1
             let volleySet = VolleySet(
-                setName: "Set \(setNumber)",
-                ourScore: UserDefaults.standard.integer(forKey: key(setNumber: setNumber, team: .us)),
-                theirScore: UserDefaults.standard.integer(forKey: key(setNumber: setNumber, team: .them))
+                number: setNumber,
+                ourScore: UserDefaults.standard.integer(forKey: VolleySet.key(setNumber: setNumber, team: .us)),
+                theirScore: UserDefaults.standard.integer(forKey: VolleySet.key(setNumber: setNumber, team: .them))
             )
             setRowController.set = volleySet
             volleySets.append(volleySet)
         }
     }
     
-    private func key(setNumber: Int, team: Team) -> String {
-        return "set\(setNumber).\(team.rawValue).score"
-    }
-    
     @IBAction func clearScores() {
         for index in 0..<setsTable.numberOfRows {
-            UserDefaults.standard.set(0, forKey: key(setNumber: index + 1, team: .us))
-            UserDefaults.standard.set(0, forKey: key(setNumber: index + 1, team: .them))
+            UserDefaults.standard.set(0, forKey: VolleySet.key(setNumber: index + 1, team: .us))
+            UserDefaults.standard.set(0, forKey: VolleySet.key(setNumber: index + 1, team: .them))
         }
         
         updateRows()
@@ -85,13 +88,13 @@ class VolleySetListInterfaceController: WKInterfaceController {
     // MARK: Test
     
     private func persistRandomScore() {
-        UserDefaults.standard.set(25, forKey: key(setNumber: 1, team: .us))
-        UserDefaults.standard.set(21, forKey: key(setNumber: 1, team: .them))
+        UserDefaults.standard.set(25, forKey: VolleySet.key(setNumber: 1, team: .us))
+        UserDefaults.standard.set(21, forKey: VolleySet.key(setNumber: 1, team: .them))
         
-        UserDefaults.standard.set(25, forKey: key(setNumber: 2, team: .us))
-        UserDefaults.standard.set(22, forKey: key(setNumber: 2, team: .them))
+        UserDefaults.standard.set(25, forKey: VolleySet.key(setNumber: 2, team: .us))
+        UserDefaults.standard.set(22, forKey: VolleySet.key(setNumber: 2, team: .them))
         
-        UserDefaults.standard.set(25, forKey: key(setNumber: 3, team: .us))
-        UserDefaults.standard.set(23, forKey: key(setNumber: 3, team: .them))
+        UserDefaults.standard.set(25, forKey: VolleySet.key(setNumber: 3, team: .us))
+        UserDefaults.standard.set(23, forKey: VolleySet.key(setNumber: 3, team: .them))
     }
 }

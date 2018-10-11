@@ -87,21 +87,26 @@
                                             <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                         </label>
-                                        <group alignment="left" id="CSF-fF-ohr">
-                                            <items>
-                                                <group alignment="left" id="dKH-se-rCl">
-                                                    <items>
-                                                        <label alignment="left" text="00" id="ZEc-Ls-P2V">
-                                                            <fontDescription key="font" type="system" pointSize="40"/>
-                                                        </label>
-                                                    </items>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <edgeInsets key="margins" left="8" right="8" top="4" bottom="4"/>
-                                                </group>
-                                            </items>
-                                            <color key="backgroundColor" red="0.98039215690000003" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <edgeInsets key="margins" left="1" right="1" top="1" bottom="1"/>
-                                        </group>
+                                        <button alignment="center" verticalAlignment="bottom" id="heR-P0-3Il">
+                                            <group key="contentGroup" alignment="left" radius="5" id="Fdn-ST-1eo">
+                                                <items>
+                                                    <group alignment="left" radius="5" id="dKH-se-rCl">
+                                                        <items>
+                                                            <label width="45" alignment="left" text="99" textAlignment="center" id="ZEc-Ls-P2V">
+                                                                <fontDescription key="font" type="system" pointSize="40"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <edgeInsets key="margins" left="8" right="8" top="4" bottom="4"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="margins" left="1" right="1" top="1" bottom="1"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="ourScoreTapped" destination="tbH-Lb-p00" id="GXz-IC-D5y"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group alignment="right" layout="vertical" id="Tvw-jl-Z1o">
@@ -110,21 +115,26 @@
                                             <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                         </label>
-                                        <group alignment="left" id="Wd0-a9-WSF">
-                                            <items>
-                                                <group alignment="left" id="XvB-sm-Ju1">
-                                                    <items>
-                                                        <label alignment="left" text="00" id="uZU-nd-KLY">
-                                                            <fontDescription key="font" type="system" pointSize="40"/>
-                                                        </label>
-                                                    </items>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <edgeInsets key="margins" left="8" right="8" top="4" bottom="4"/>
-                                                </group>
-                                            </items>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                                            <edgeInsets key="margins" left="1" right="1" top="1" bottom="1"/>
-                                        </group>
+                                        <button alignment="center" verticalAlignment="bottom" id="wsJ-ho-g0k">
+                                            <group key="contentGroup" alignment="left" radius="5" id="UhM-Tp-Orw">
+                                                <items>
+                                                    <group alignment="left" radius="5" id="XvB-sm-Ju1">
+                                                        <items>
+                                                            <label width="45" alignment="left" text="00" textAlignment="center" id="uZU-nd-KLY">
+                                                                <fontDescription key="font" type="system" pointSize="40"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <edgeInsets key="margins" left="8" right="8" top="4" bottom="4"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="margins" left="1" right="1" top="1" bottom="1"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="theirScoreTapped" destination="tbH-Lb-p00" id="T60-bi-cJC"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
@@ -132,8 +142,10 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="ourScoreGroup" destination="Fdn-ST-1eo" id="Pua-FG-XsO"/>
                         <outlet property="ourScoreLabel" destination="ZEc-Ls-P2V" id="547-nt-HJJ"/>
                         <outlet property="setTitleLabel" destination="0Y7-SX-nH8" id="Ocm-tg-oMC"/>
+                        <outlet property="theirScoreGroup" destination="UhM-Tp-Orw" id="SUr-bg-96J"/>
                         <outlet property="theirScoreLabel" destination="uZU-nd-KLY" id="bdh-e2-2J9"/>
                     </connections>
                 </controller>

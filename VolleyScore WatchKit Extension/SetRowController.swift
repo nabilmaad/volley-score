@@ -19,7 +19,7 @@ class SetRowController: NSObject {
         didSet {
             guard let set = set else { return }
             
-            titleLabel.setText(set.setName)
+            titleLabel.setText(set.name)
             
             ourScoreLabel.setText(String(set.ourScore))
             theirScoreLabel.setText(String(set.theirScore))
