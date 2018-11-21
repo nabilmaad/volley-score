@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:VolleyScore.xcodeproj">
+      location = "self:/Users/nabil/Developer/VolleyScore/WatchScores.xcodeproj">
    </FileRef>
 </Workspace>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BD3A76B2216C0CA600733371"
-               BuildableName = "VolleyScore.app"
-               BlueprintName = "VolleyScore"
-               ReferencedContainer = "container:VolleyScore.xcodeproj">
+               BuildableName = "WatchScores.app"
+               BlueprintName = "WatchScores"
+               ReferencedContainer = "container:WatchScores.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76B2216C0CA600733371"
-            BuildableName = "VolleyScore.app"
-            BlueprintName = "VolleyScore"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores.app"
+            BlueprintName = "WatchScores"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76B2216C0CA600733371"
-            BuildableName = "VolleyScore.app"
-            BlueprintName = "VolleyScore"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores.app"
+            BlueprintName = "WatchScores"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76B2216C0CA600733371"
-            BuildableName = "VolleyScore.app"
-            BlueprintName = "VolleyScore"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores.app"
+            BlueprintName = "WatchScores"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-               BuildableName = "VolleyScore WatchKit App.app"
-               BlueprintName = "VolleyScore WatchKit App"
-               ReferencedContainer = "container:VolleyScore.xcodeproj">
+               BuildableName = "WatchScores WatchKit App.app"
+               BlueprintName = "WatchScores WatchKit App"
+               ReferencedContainer = "container:WatchScores.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BD3A76B2216C0CA600733371"
-               BuildableName = "VolleyScore.app"
-               BlueprintName = "VolleyScore"
-               ReferencedContainer = "container:VolleyScore.xcodeproj">
+               BuildableName = "WatchScores.app"
+               BlueprintName = "WatchScores"
+               ReferencedContainer = "container:WatchScores.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-            BuildableName = "VolleyScore WatchKit App.app"
-            BlueprintName = "VolleyScore WatchKit App"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores WatchKit App.app"
+            BlueprintName = "WatchScores WatchKit App"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -74,18 +74,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-            BuildableName = "VolleyScore WatchKit App.app"
-            BlueprintName = "VolleyScore WatchKit App"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores WatchKit App.app"
+            BlueprintName = "WatchScores WatchKit App"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-            BuildableName = "VolleyScore WatchKit App.app"
-            BlueprintName = "VolleyScore WatchKit App"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores WatchKit App.app"
+            BlueprintName = "WatchScores WatchKit App"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -106,18 +106,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-            BuildableName = "VolleyScore WatchKit App.app"
-            BlueprintName = "VolleyScore WatchKit App"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores WatchKit App.app"
+            BlueprintName = "WatchScores WatchKit App"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD3A76C4216C0CA800733371"
-            BuildableName = "VolleyScore WatchKit App.app"
-            BlueprintName = "VolleyScore WatchKit App"
-            ReferencedContainer = "container:VolleyScore.xcodeproj">
+            BuildableName = "WatchScores WatchKit App.app"
+            BlueprintName = "WatchScores WatchKit App"
+            ReferencedContainer = "container:WatchScores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

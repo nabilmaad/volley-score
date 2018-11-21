@@ -12,10 +12,10 @@
 		BD3A76BC216C0CA600733371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76BA216C0CA600733371 /* Main.storyboard */; };
 		BD3A76BE216C0CA800733371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76BD216C0CA800733371 /* Assets.xcassets */; };
 		BD3A76C1216C0CA800733371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76BF216C0CA800733371 /* LaunchScreen.storyboard */; };
-		BD3A76C6216C0CA800733371 /* VolleyScore WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BD3A76C5216C0CA800733371 /* VolleyScore WatchKit App.app */; };
+		BD3A76C6216C0CA800733371 /* WatchScores WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BD3A76C5216C0CA800733371 /* WatchScores WatchKit App.app */; };
 		BD3A76CC216C0CA800733371 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76CA216C0CA800733371 /* Interface.storyboard */; };
 		BD3A76CE216C0CA900733371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A76CD216C0CA900733371 /* Assets.xcassets */; };
-		BD3A76D5216C0CA900733371 /* VolleyScore WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BD3A76D5216C0CA900733371 /* WatchScores WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD3A76D4216C0CA900733371 /* WatchScores WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BD3A76DA216C0CA900733371 /* VolleySetListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */; };
 		BD3A76DC216C0CA900733371 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76DB216C0CA900733371 /* ExtensionDelegate.swift */; };
 		BD3A76DE216C0CA900733371 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A76DD216C0CA900733371 /* NotificationController.swift */; };
@@ -31,14 +31,14 @@
 			containerPortal = BD3A76AB216C0CA600733371 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BD3A76C4216C0CA800733371;
-			remoteInfo = "VolleyScore WatchKit App";
+			remoteInfo = "WatchScores WatchKit App";
 		};
 		BD3A76D6216C0CA900733371 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BD3A76AB216C0CA600733371 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BD3A76D3216C0CA900733371;
-			remoteInfo = "VolleyScore WatchKit Extension";
+			remoteInfo = "WatchScores WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BD3A76D5216C0CA900733371 /* VolleyScore WatchKit Extension.appex in Embed App Extensions */,
+				BD3A76D5216C0CA900733371 /* WatchScores WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +60,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				BD3A76C6216C0CA800733371 /* VolleyScore WatchKit App.app in Embed Watch Content */,
+				BD3A76C6216C0CA800733371 /* WatchScores WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,18 +68,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BD3A76B3216C0CA600733371 /* VolleyScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolleyScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3A76B3216C0CA600733371 /* WatchScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A76B6216C0CA600733371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD3A76B8216C0CA600733371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD3A76BB216C0CA600733371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD3A76BD216C0CA800733371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3A76C0216C0CA800733371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3A76C2216C0CA800733371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD3A76C5216C0CA800733371 /* VolleyScore WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VolleyScore WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3A76C5216C0CA800733371 /* WatchScores WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchScores WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A76CB216C0CA800733371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		BD3A76CD216C0CA900733371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3A76CF216C0CA900733371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VolleyScore WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3A76D4216C0CA900733371 /* WatchScores WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchScores WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A76D9216C0CA900733371 /* VolleySetListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolleySetListInterfaceController.swift; sourceTree = "<group>"; };
 		BD3A76DB216C0CA900733371 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		BD3A76DD216C0CA900733371 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -112,9 +112,9 @@
 		BD3A76AA216C0CA600733371 = {
 			isa = PBXGroup;
 			children = (
-				BD3A76B5216C0CA600733371 /* VolleyScore */,
-				BD3A76C9216C0CA800733371 /* VolleyScore WatchKit App */,
-				BD3A76D8216C0CA900733371 /* VolleyScore WatchKit Extension */,
+				BD3A76B5216C0CA600733371 /* WatchScores */,
+				BD3A76C9216C0CA800733371 /* WatchScores WatchKit App */,
+				BD3A76D8216C0CA900733371 /* WatchScores WatchKit Extension */,
 				BD3A76B4216C0CA600733371 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,14 +122,14 @@
 		BD3A76B4216C0CA600733371 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD3A76B3216C0CA600733371 /* VolleyScore.app */,
-				BD3A76C5216C0CA800733371 /* VolleyScore WatchKit App.app */,
-				BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */,
+				BD3A76B3216C0CA600733371 /* WatchScores.app */,
+				BD3A76C5216C0CA800733371 /* WatchScores WatchKit App.app */,
+				BD3A76D4216C0CA900733371 /* WatchScores WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD3A76B5216C0CA600733371 /* VolleyScore */ = {
+		BD3A76B5216C0CA600733371 /* WatchScores */ = {
 			isa = PBXGroup;
 			children = (
 				BD3A76B6216C0CA600733371 /* AppDelegate.swift */,
@@ -139,20 +139,20 @@
 				BD3A76BF216C0CA800733371 /* LaunchScreen.storyboard */,
 				BD3A76C2216C0CA800733371 /* Info.plist */,
 			);
-			path = VolleyScore;
+			path = WatchScores;
 			sourceTree = "<group>";
 		};
-		BD3A76C9216C0CA800733371 /* VolleyScore WatchKit App */ = {
+		BD3A76C9216C0CA800733371 /* WatchScores WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				BD3A76CA216C0CA800733371 /* Interface.storyboard */,
 				BD3A76CD216C0CA900733371 /* Assets.xcassets */,
 				BD3A76CF216C0CA900733371 /* Info.plist */,
 			);
-			path = "VolleyScore WatchKit App";
+			path = "WatchScores WatchKit App";
 			sourceTree = "<group>";
 		};
-		BD3A76D8216C0CA900733371 /* VolleyScore WatchKit Extension */ = {
+		BD3A76D8216C0CA900733371 /* WatchScores WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				BD7A2716216F237D001A0A21 /* ComplicationController.swift */,
@@ -165,15 +165,15 @@
 				BD3A76E1216C0CA900733371 /* Info.plist */,
 				BD3A76E2216C0CA900733371 /* PushNotificationPayload.apns */,
 			);
-			path = "VolleyScore WatchKit Extension";
+			path = "WatchScores WatchKit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD3A76B2216C0CA600733371 /* VolleyScore */ = {
+		BD3A76B2216C0CA600733371 /* WatchScores */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD3A76ED216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore" */;
+			buildConfigurationList = BD3A76ED216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores" */;
 			buildPhases = (
 				BD3A76AF216C0CA600733371 /* Sources */,
 				BD3A76B0216C0CA600733371 /* Frameworks */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				BD3A76C8216C0CA800733371 /* PBXTargetDependency */,
 			);
-			name = VolleyScore;
-			productName = VolleyScore;
-			productReference = BD3A76B3216C0CA600733371 /* VolleyScore.app */;
+			name = WatchScores;
+			productName = WatchScores;
+			productReference = BD3A76B3216C0CA600733371 /* WatchScores.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BD3A76C4216C0CA800733371 /* VolleyScore WatchKit App */ = {
+		BD3A76C4216C0CA800733371 /* WatchScores WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD3A76E9216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore WatchKit App" */;
+			buildConfigurationList = BD3A76E9216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores WatchKit App" */;
 			buildPhases = (
 				BD3A76C3216C0CA800733371 /* Resources */,
 				BD3A76E8216C0CA900733371 /* Embed App Extensions */,
@@ -202,14 +202,14 @@
 			dependencies = (
 				BD3A76D7216C0CA900733371 /* PBXTargetDependency */,
 			);
-			name = "VolleyScore WatchKit App";
-			productName = "VolleyScore WatchKit App";
-			productReference = BD3A76C5216C0CA800733371 /* VolleyScore WatchKit App.app */;
+			name = "WatchScores WatchKit App";
+			productName = "WatchScores WatchKit App";
+			productReference = BD3A76C5216C0CA800733371 /* WatchScores WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		BD3A76D3216C0CA900733371 /* VolleyScore WatchKit Extension */ = {
+		BD3A76D3216C0CA900733371 /* WatchScores WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD3A76E5216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore WatchKit Extension" */;
+			buildConfigurationList = BD3A76E5216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores WatchKit Extension" */;
 			buildPhases = (
 				BD3A76D0216C0CA900733371 /* Sources */,
 				BD3A76D1216C0CA900733371 /* Frameworks */,
@@ -219,9 +219,9 @@
 			);
 			dependencies = (
 			);
-			name = "VolleyScore WatchKit Extension";
-			productName = "VolleyScore WatchKit Extension";
-			productReference = BD3A76D4216C0CA900733371 /* VolleyScore WatchKit Extension.appex */;
+			name = "WatchScores WatchKit Extension";
+			productName = "WatchScores WatchKit Extension";
+			productReference = BD3A76D4216C0CA900733371 /* WatchScores WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD3A76AE216C0CA600733371 /* Build configuration list for PBXProject "VolleyScore" */;
+			buildConfigurationList = BD3A76AE216C0CA600733371 /* Build configuration list for PBXProject "WatchScores" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,9 +258,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD3A76B2216C0CA600733371 /* VolleyScore */,
-				BD3A76C4216C0CA800733371 /* VolleyScore WatchKit App */,
-				BD3A76D3216C0CA900733371 /* VolleyScore WatchKit Extension */,
+				BD3A76B2216C0CA600733371 /* WatchScores */,
+				BD3A76C4216C0CA800733371 /* WatchScores WatchKit App */,
+				BD3A76D3216C0CA900733371 /* WatchScores WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -323,12 +323,12 @@
 /* Begin PBXTargetDependency section */
 		BD3A76C8216C0CA800733371 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD3A76C4216C0CA800733371 /* VolleyScore WatchKit App */;
+			target = BD3A76C4216C0CA800733371 /* WatchScores WatchKit App */;
 			targetProxy = BD3A76C7216C0CA800733371 /* PBXContainerItemProxy */;
 		};
 		BD3A76D7216C0CA900733371 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD3A76D3216C0CA900733371 /* VolleyScore WatchKit Extension */;
+			target = BD3A76D3216C0CA900733371 /* WatchScores WatchKit Extension */;
 			targetProxy = BD3A76D6216C0CA900733371 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -483,13 +483,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				INFOPLIST_FILE = "VolleyScore WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchScores WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -505,13 +505,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				INFOPLIST_FILE = "VolleyScore WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchScores WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -528,9 +528,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				IBSC_MODULE = VolleyScore_WatchKit_Extension;
-				INFOPLIST_FILE = "VolleyScore WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore.watchkitapp;
+				IBSC_MODULE = WatchScores_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchScores WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -547,9 +547,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				IBSC_MODULE = VolleyScore_WatchKit_Extension;
-				INFOPLIST_FILE = "VolleyScore WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore.watchkitapp;
+				IBSC_MODULE = WatchScores_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchScores WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -565,12 +565,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				INFOPLIST_FILE = VolleyScore/Info.plist;
+				INFOPLIST_FILE = WatchScores/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,12 +583,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WB8CM5L7ZT;
-				INFOPLIST_FILE = VolleyScore/Info.plist;
+				INFOPLIST_FILE = WatchScores/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.VolleyScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabs.WatchScores;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD3A76AE216C0CA600733371 /* Build configuration list for PBXProject "VolleyScore" */ = {
+		BD3A76AE216C0CA600733371 /* Build configuration list for PBXProject "WatchScores" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD3A76E3216C0CA900733371 /* Debug */,
@@ -607,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD3A76E5216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore WatchKit Extension" */ = {
+		BD3A76E5216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD3A76E6216C0CA900733371 /* Debug */,
@@ -616,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD3A76E9216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore WatchKit App" */ = {
+		BD3A76E9216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD3A76EA216C0CA900733371 /* Debug */,
@@ -625,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD3A76ED216C0CA900733371 /* Build configuration list for PBXNativeTarget "VolleyScore" */ = {
+		BD3A76ED216C0CA900733371 /* Build configuration list for PBXNativeTarget "WatchScores" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD3A76EE216C0CA900733371 /* Debug */,
